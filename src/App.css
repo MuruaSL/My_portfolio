@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap') ;
+
+#root {
+  margin: 0;
+  background-image: url(/img/arenanegra.jpg);
+  background-size: cover;
+}
+
+
+
+
+/* ------------------------------------------- app.jsx ------------------------------------------------ */
+.banner_index_container{
+  width: 98.5vw;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+/* img de fondo del banner, se le aplica sombreado por css de abajo hacia arriba y se le indica que cubra todo el espacio */
+  background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/mujer2.jpg); 
+  background-size: cover;
+
+}
+
+.banner_index{
+  width: 100%;
+}
+
+.index_title{
+  font-family: "Cinzel",serif;
+  text-align: center;
+  
+  top: 0%-25vh;
+  font-size: 5vw;
+}
+
+.subtitulo{
+  font-family: "Cinzel",serif;
+  font-size: 2vw;
+  padding-left: 3vw;
+}
+
+/* Contenedor de la grilla */
+.parent {
+  border-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) 0;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(/img/SlCreacionesPreview.png);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .div2 { grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(/img/proximamente.jpg);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+    background-position: center;
+
+  }
+  .div3 { grid-area: 1 / 2 / 2 / 3; 
+    background-image: url(/img/bynPreview.png);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .div4 { grid-area: 2 / 2 / 3 / 3; 
+    background-image: url(/img/proximamente.jpg);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+    background-position: center;
+
+  }
+  .div5 { grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(/img/HerreriaPreview.png);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .div6 { grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(/img/proximamente.jpg);
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+    background-position: center;
+  }
+
+   /* Aplica hover a cada una de las tarjetas del grid */
+  .div1:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/SlCreacionesPreview.png);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+  .div2:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/proximamente.jpg);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+  .div3:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/bynPreview.png);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+  .div4:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/proximamente.jpg);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+  .div5:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/HerreriaPreview.png);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+  .div6:hover{
+    background-image:linear-gradient(to top, rgb(0 0 0 / .9),rgb(0 0 0/.3)), url(/img/proximamente.jpg);
+    transform: scale(1.03);
+    transition: 1.2s;
+  } 
+
+  .container_tecnologias{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff12;
+    height: 20vh;  }
+
+  .visit_button{
+    color: #FFF;
+    border: 2px solid #9b0000;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #9b0000;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .visit_button:hover{
+        box-shadow: inset 400px 0 0 0 #9b0000;
+        border: 2px solid #000000;
+  }
